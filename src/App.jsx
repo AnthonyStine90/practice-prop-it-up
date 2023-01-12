@@ -11,8 +11,10 @@ const App = () => {
           {
             //need to use curly braces to tell react you are using javascript
             people.map((person, idx) => (<PersonCard
+            //need to make a key that = idx
             //use .map to "map" over array/info data
             //every element in a map needs a unique key (idx)
+            key = {idx}
             firstName={person.firstName}
             lastName={person.lastName}
             age={person.age}
